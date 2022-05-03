@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trabalhando com elementos</title>
+  <style media="screen">
+
+
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+  width: 100%;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  border: 2px solid red;
+}
+
+.float-child.green {
+    margin-right: 20px;
+}
+
+
+
+.flex-child2 {
+    display: flex;
+    flex: 1;
+    border: 2px solid yellow;
+}
+
+
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+
+
+.dive {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#div-exemplo1 {
+    background-color: magenta;
+}
+#div-exemplo2 {
+    background-color: teal;
+}
+  </style>
+</head>
+<body>
+
+<header class="flex-container">
+
+  <h2>testes com Flexbox</h2>
+
+  <!-- <div class="flex-container">
+
+    <div class="flex-child magenta">
+      Flex Column 1
+    </div>
+
+    <div class="flex-child green">
+      Flex Column 2
+    </div>
+
+  </div> -->
+
+  <div class="flex-child2 magenta">
+    Flex Column 1
+  </div>
+
+</header>
+
+<h2>inline-block</h2>
+
+  <div id="div-exemplo1" class="dive"></div>
+  <div id="div-exemplo2" class="dive"></div>
+
+<p>Fonte: <a href="https://www.horadecodar.com.br/2020/02/10/como-posicionar-uma-div-do-lado-de-outra-css/">Hora de Codar</a></p>
+
+
+<h2>Float Method</h2>
+
+  <div class="float-container1">
+
+    <div class="float-child1">
+      <div class="green">Float Column 1</div>
+    </div>
+
+    <div class="float-child1">
+      <div class="blue">Float Column 2</div>
+    </div>
+
+  </div>
+
+<p>Fonte: <a href="https://coder-coder.com/display-divs-side-by-side/#float-method"></a>3 ways to display two divs side by side -- float</p>
+
+
+<h2>Flexbox Method</h2>
+
+<div class="flex-container">
+
+  <div class="flex-child magenta">
+    Flex Column 1
+  </div>
+
+  <div class="flex-child green">
+    Flex Column 2
+  </div>
+
+</div>
+
+<p>Fonte: <a href="https://coder-coder.com/display-divs-side-by-side/#flexbox-method">3 ways to display two divs side by side -- flexbox</a></p>
+
+
+<h2>CSS Grid Method</h2>
+
+<div class="grid-container">
+
+    <div class="grid-child purple">
+        Grid Column 1
+    </div>
+
+    <div class="grid-child green">
+        Grid Column 2
+    </div>
+
+</div>
+
+<p>Fonte: <a href="https://coder-coder.com/display-divs-side-by-side/#grid-method">3 ways to display two divs side by side -- CSS grid</a></p>
+
+
+<h2>inline usando float</h2>
+
+<div style="width: 100%;">
+ <div style="float: left; width: 200px;">Left Stuff</div>
+ <div style="float: left; width: 100px;">Middle Stuff</div>
+ <div style="float: left; width: 200px;">Right Stuff</div>
+ <br style="clear: left;" />
+</div>
+
+<p>Fonte: <a href="https://stackoverflow.com/questions/2156712/how-to-float-3-divs-side-by-side-using-css">How to float 3 divs side by side using CSS?</a></p>
+
+<p>PS: evitem esse estilo inline que foi utilizado no exemplo ;-)</p>
+
+
+<h2>Vídeo</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XotsUu0Y7YY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+
+</html>
